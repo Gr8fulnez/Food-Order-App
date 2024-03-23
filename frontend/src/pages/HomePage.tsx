@@ -1,3 +1,5 @@
+import landingPage from "../assets/landing.png";
+import appDownloadImage from "../assets/appDownload.png";
 
 export default function HomePage() {
   return (
@@ -8,6 +10,19 @@ export default function HomePage() {
           Tuck into a takeaway today
         </h1>
         <span className="text-x1">Food is just a click away!</span>
+      </div>
+      <div className="grid md:grid-cols-2 gap-5">
+        <img src={landingPage} alt="" />
+        <div className="flex flex-col items-center justify-center gap-4 text-center">
+          <span className="font-bold text-3xl tracking-tighter">
+            Order takeaway even faster!
+          </span>
+          <span>
+            Download the MernEats App for faster ordering and personalised
+            recommendations
+          </span>
+          <img src={appDownloadImage} alt="" />
+        </div>
       </div>
     </div>
   );
