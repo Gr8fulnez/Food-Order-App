@@ -3,7 +3,7 @@ import { cuisineList } from "@/config/restaurant-options-config";
 import { useFormContext } from "react-hook-form";
 import { CuisineCheckbox } from "./CuisineCheckbox";
 
-export const CuisinessSection = () => {
+export const CuisinesSection = () => {
   const { control } = useFormContext();
   return (
     <div className="space-y-2">
